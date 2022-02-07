@@ -1,6 +1,6 @@
 package stroki;
 
-public class Obertki {
+public class Skobki {
 //
 //    Постановка задачи: Необходимо написать метод,который выполняет валидацию строки.
 //    Если , строка состоит из скобок составленных по математическим правилам , то результат выполнения функции успех
@@ -50,20 +50,20 @@ public class Obertki {
         System.out.println(check("()()"));
         System.out.println(check("())(()"));
         System.out.println(check2("([])")); //true
-        System.out.println(check2("()[]")); //false
+        System.out.println(check2("()[]")); //false два блока подряд без оберточного блока
         System.out.println(check2("(()[])")); //true
-        System.out.println(check2("(([)])")); //false
+        System.out.println(check2("(([)])")); //false в квадратные скобки нельзя вкладывать круглые
         System.out.println(check2("([()])")); //false в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("(([]))")); //true в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("(([][]))")); //true в квадратные скобки нельзя вкладывать круглые
+        System.out.println(check2("(([]))")); //true
+        System.out.println(check2("(([][]))")); //true
         System.out.println(check2("([(][]))")); //false в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("()")); //true в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("[]")); //true в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("[][]")); //false в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("(([])([]))")); //true в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("([])([])")); //true в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("()()")); //false в квадратные скобки нельзя вкладывать круглые
-        System.out.println(check2("([][])")); //true в квадратные скобки нельзя вкладывать круглые
+        System.out.println(check2("()")); //true
+        System.out.println(check2("[]")); //true
+        System.out.println(check2("[][]")); //false два блока подряд без оберточного блока
+        System.out.println(check2("(([])([]))")); //true
+        System.out.println(check2("([])([])")); //true
+        System.out.println(check2("()()")); //false два блока подряд без оберточного блока
+        System.out.println(check2("([][])")); //true
     }
 
     public static boolean check(String stroka) {
