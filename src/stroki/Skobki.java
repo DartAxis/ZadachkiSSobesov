@@ -1,5 +1,8 @@
 package stroki;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Skobki {
 //
 //    Постановка задачи: Необходимо написать метод,который выполняет валидацию строки.
@@ -94,6 +97,16 @@ public class Skobki {
         }
         return count == 0;
     }
+
+//    public static Boolean check(String text) {
+//        Pattern pattern = Pattern.compile("\\([\\d+/*-]*\\)");
+//        Matcher matcher = pattern.matcher(text);
+//        do {
+//            text = matcher.replaceAll("");
+//            matcher = pattern.matcher(text);
+//        } while (matcher.find());
+//        return text.matches("[\\d+/*-]*");
+//    }
 
     public static boolean check2(String stroka) {
         System.out.print(stroka + "  -  ");
