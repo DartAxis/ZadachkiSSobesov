@@ -1,8 +1,5 @@
 package stroki;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Skobki {
 //
 //    Постановка задачи: Необходимо написать метод,который выполняет валидацию строки.
