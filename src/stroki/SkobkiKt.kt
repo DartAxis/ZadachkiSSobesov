@@ -24,7 +24,6 @@ fun check(stroka: String): Boolean {
         return false
     }
     var count = 0
-
     for (c in stroka.indices) {
         when (stroka[c]) {
             '(' -> count ++
